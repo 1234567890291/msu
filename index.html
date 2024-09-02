@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MSU | Portfolio </title>
+    <meta name="description" content="Portfolio Template for Developer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; 
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; 
+        img-src 'self' data:; 
+        font-src 'self' https://fonts.gstatic.com; 
+        connect-src 'self'; 
+        object-src 'none'; 
+        media-src 'self';
+        frame-ancestors 'none'; 
+        base-uri 'self'; 
+        form-action 'self'; 
+        upgrade-insecure-requests; 
+        block-all-mixed-content;
+    "/>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), fullscreen=(self)" />
+    <meta name="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
+    <meta name="Expect-CT" content="enforce, max-age=86400, report-uri='https://example.com/report'" />
+</head>
+
+  <body class="">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Muhammad Sudais Usmani Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">M.Sudais Usmani</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="#" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#skills" class="header__link">Skills </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#projects" class="header__link">Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="#"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#skills">Skills</a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, My name is M.Sudais Usmani</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente solutions for
+            complex problems
+          </p>
+          <div class="text-3">And I'm a <span class="typing"></span></div>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I am 14 years old. Despite my young age, I have developed a wide range of skills in the field of computers and technology. 
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <div class="about__content-details-para">
+                <ul>
+                    <li><strong>Web Development:</strong> I specialize in creating front-end websites using HTML, CSS, and JavaScript. I am passionate about designing responsive and visually appealing web pages.</li>
+                    <li><strong>Graphic Design:</strong> With a strong design sensibility, I excel at creating visually compelling graphics that effectively represent brands and ideas.</li>
+                    <li><strong>Web Applications:</strong> I develop dynamic web applications using HTML, CSS, and JavaScript to enhance website functionality.</li>
+                    <li><strong>Ethical Hacking:</strong> As an ethical hacker, I am adept at identifying and addressing security vulnerabilities to ensure systems remain secure.</li>
+                    <li><strong>Cybersecurity Expertise:</strong> I possess a solid foundation in cybersecurity, focusing on protecting systems and data from malicious attacks and breaches.</li>
+                </ul>
+            </div>
+            
+            
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <div class="img-shine">
+              <figure>
+                <img
+                  src="./assets/png/msu-logo.png"
+                  alt="Software Screenshot"
+                  width="400px"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- skills -->
+    <section id="skills" class="skills sec-pad" style="background-color: rgba(255, 255, 255, 0.473);">
+      <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+              <span class="heading-sec__main">My Skills</span>
+              <span class="heading-sec__sub">
+                  An overview of my growing expertise and passion for technology.
+              </span>
+          </h2>
+          <div class="skills__content">
+              <div class="skills__content-main">
+                  <h3 class="skills__content-title">About Me</h3>
+                  <div class="skills__content-details">
+                      <p class="skills__content-details-para">
+                          Hello! I'm <strong>M. Sudais Usmani</strong>, a <strong>Frontend Web Developer</strong> based in Los Angeles. I am actively learning and working on personal projects to enhance my skills in web development and digital design.
+                      </p>
+                      <p class="skills__content-details-para">
+                          My journey in technology includes exploring various web and mobile applications, and I am always eager to learn and grow. If you have any questions or opportunities for collaboration, please feel free to <strong>contact</strong> me.
+                      </p>
+                  </div>
+                  <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+              </div>
+              <div class="skills__content-skills">
+                  <h3 class="skills__content-title">Skills</h3>
+                  <div class="skills">
+                      <div class="skills__skill">HTML</div>
+                      <div class="skills__skill">CSS</div>
+                      <div class="skills__skill">JavaScript</div>
+                      <div class="skills__skill">Bootstrap</div>
+                      <div class="skills__skill">GitHub</div>
+                      <div class="skills__skill">AI</div>
+                      <div class="skills__skill">Kali Linux</div>
+                      <div class="skills__skill">Parrot OS</div>
+                      <div class="skills__skill">WIX</div>
+                      <div class="skills__skill">123Site.ME</div>
+                      <div class="skills__skill">Tailwind CSS</div>
+                      <div class="skills__skill">SQL</div>
+                      <div class="skills__skill">PHP</div>
+                      <div class="skills__skill">Metasploit</div>
+                      <div class="skills__skill">pentest Box</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+
+
+   <section id="skills" class="skills sec-pad">
+      <div class="main-container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
+                  <p style="text-align:left;">
+                    <img src="./assets/svg/python-horizontal.svg" title="Python" alt="img_logo" height="50" width="150">
+                    <img src="./assets/svg/html.svg" alt="img_logo" title="HTML" height="50" width="120">
+                    <img src="./assets/svg/css.svg" alt="img_logo" title="CSS" height="90" width="100">
+                    <img src="./assets/webp/javascript-logo.webp" title="JavaScript" alt="img_logo" height="50" >
+                    <img src="./assets/svg/mysql-horizontal.svg" title="MySQL" alt="img_logo">
+                    <img src="./assets/png/PhpMyAdmin_logo.png" title="PhpMyAdmin" alt="img_logo" width="100%">
+                    <img src="./assets/svg/php.svg" title="PHP"  alt="img_logo" width="100">
+                    <img src="./assets/svg/postgresql.svg" title="PostgreSQL"  alt="img_logo" >
+                    <img src="./assets/png/bashscripting.png" title="Shell Script"  alt="img_logo" >
+                    <img src="./assets/png/xml.png" title="XML" alt="img_logo" >
+                    <img src="./assets/png/json.png" title="JSON" alt="img_logo" >
+                    <img src="./assets/svg/golang-ar21.svg" title="Go Lang" alt="img_logo">
+                    <img src="./assets/svg/react.svg" title="C" alt="img_logo" >
+                    <img src="./assets/svg/c.svg" title="C" alt="img_logo" >
+                    <img src="./assets/png/bhai-lang.PNG" alt="img_logo" style="border-radius: 10px;" height="50" width="190">
+  
+                  </p>
+              </div>
+              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+                <h4 style="text-align:left;color:#09203a">Frameworks</h4>
+                  <p style="text-align:left;">
+                    <img src="./assets/svg/getbootstrap-ar21.svg" title="Bootstrap" alt="img_logo">
+                    <img src="./assets/png/Tailwind_CSS_Logo.svg.png" width="90px" title="Tailwind CSS" alt="img_logo">
+                    <img src="./assets/svg/jquery.svg" title="JQuery" alt="img_logo">
+                    <img src="./assets/jpeg/ripen.jfif" title="Ripen CSS" alt="img_logo">
+                    <img src="./assets/svg/osint-1.svg" title="OSINT Framework" alt="img_logo">
+                    <img src="./assets/png/blaze ui.png" title="Blaze UI" alt="img_logo">
+                    <img src="./assets/jpeg/datahunter-osint.gif" title="D4TA-HUNTER " style="border-radius: 10px;" alt="img_logo">
+                    <img src="./assets/png/w3.css.png" title="W3.CSS" alt="img_logo" style="border-radius: 100px;">
+                    <img src="./assets/png/bulma-banner.png" title="Bulma" alt="img_logo">
+                    <img src="./assets/png/semantic ui.png" title="Semantic UI" alt="img_logo" width="90" height="70">
+                    <img src="./assets/png/Materialize.png" title="Materialize" alt="img_logo" width="90" height="70">
+                    <img src="./assets/webp/Angular.webp" title="Angular" alt="img_logo" style="width: 6.7%; height: 100%; object-fit: cover;">
+                  </p>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">Website</h4>
+                <p style="text-align:left;">
+                  <img src="./assets/svg/verpex-new-logo.svg" title="verpex" alt="img_logo">
+                  <img src="./assets/png/w3school.png" title="w3school" alt="img_logo">
+                  <img src="./assets/png/tutorial point.png" title="Tutorial point" alt="img_logo">
+                  <img src="./assets/png/learn-js.org.png" style="border-radius: 10px;" title="Learn JS" alt="img_logo">
+                  <img src="./assets/png/tcm-security.png"alt="img_logo">
+                  <img src="./assets/png/learnpython.org.png" title="Learn Python" style="border-radius: 10px;" alt="img_logo">
+                  <img src="./assets/jpg/go-lang.jpg" title="Learn GoLang" style="border-radius: 100%;" alt="img_logo">
+                  <img src="./assets/jpg/owasp.jpg" title="OWASP Top 10" alt="img_logo">
+              </p>
+          </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">AI</h4>
+                <p style="text-align:left;">
+                  <img src="./assets/png/Microsoft_365_Copilot_Icon.svg.png" alt="img_logo">
+                  <img src="./assets/png/blackboxai.png" style="border-radius: 7px;" title="BlackBox AI" alt="img_logo">
+                  <img src="./assets/svg/vo.vercel.svg" width="80px" title="v0 AI Vercel" alt="img_logo">
+                  <img src="./assets/webp/creativefabrica.webp" height="100px" title="CreativeFabrica" alt="img_logo">
+                  <img src="./assets/svg/CodeConvert.svg" width="60px" title="CodeConvert AI" alt="img_logo">
+                  <img src="./assets/svg/ninja tech ai.svg" width="1000px" title="Ninja Tech AI" alt="img_logo">
+                  <img src="./assets/png/chat gpt.png" title="ChatGpt" width="50px" alt="img_logo">
+                  <img src="./assets/jpg/yeschat.jpg" title="YesChat AI" alt="img_logo" width="90" height="70">
+                  <img src="./assets/png/ideogram.ai.png" title="IdeoGram AI" alt="img_logo" style="border-radius: 10px;">
+                  <img src="./assets/svg/Google_Bard_logo.svg" alt="img_logo" width="90" height="70">
+                  <img src="./assets/" alt="img_logo" width="90" height="70">
+                  
+              </p>
+          </div>
+          
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+                <h4 style="text-align:left;color:#09203a">Tools</h4>
+                  <p style="text-align:left;">
+                    <img src="./assets/svg/git-logo.svg" alt="img_logo">
+                  <img src="./assets/svg/codepen-official.svg" alt="img_logo">
+                    <img src="./assets/png/GitHub-logo.png" alt="img_logo">
+                    <img src="./assets/png/replit-logo.png" style="border-radius: 10px; width: 50px;" alt="img_logo">
+                    <img src="./assets/webp/vercel-logo.webp" alt="img_logo">
+                    <img src="./assets/jpg/Netlify.jpg" alt="img_logo">
+                    <img src="./assets/png/csp_evaluator_var.png" style="background-color: #000000;" alt="img_logo">
+                    <img src="./assets/png/000webhost.png" alt="img_logo">
+                    <img src="./assets/svg/infnity-free.svg" style="width: 70px;" alt="img_logo">
+                    <img src="./assets/svg/qr-code-monkey-logo.svg" style="background-color: #000000; border-radius: 29px;" alt="img_logo">
+                    <img src="./assets/png/proton-logo.png" style="width: 70px;" alt="img_logo">
+                    <img src="./assets/png/cloudfare.com" style="width: 140px;" alt="img_logo">
+                    <img src="./assets/png/ngrok.png" style="width: 70px;" alt="img_logo">
+                    <img src="./assets/png/pexel.png" style="width: 70px; border-radius: 10px;" title="pexel" alt="img_logo">
+                    <img src="./assets/png/google-dev-maps.png" style="width: 70px;" alt="img_logo">
+                    <img src="./assets/svg/ssl-shopper-logo.svg"  alt="img_logo">
+                    <img src="./assets/svg/vlzlogo-white.svg" style="background-color: #1D8286;height: 40px; width: 100%; border-radius: 10px;" alt="img_logo">
+                    <img src="./assets/png/readme.png" style="width: 70px;" alt="img_logo">
+                    <img src="./assets/png/stackoverflow.png" title="StackoverFlow" style="width: 70px;" alt="img_logo">
+                </p>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">Softwares for Development</h4>
+                <p style="text-align:left;">
+                  <img src="./assets/svg/vscodium.svg" title="VS Codium" alt="img_logo">
+                  <img src="./assets/png/sublime_text.png" alt="img_logo">
+                  <img src="./assets/jpg/website2apk-build-pro.jpg" alt="img_logo">
+                  <img src="./assets/webp/vs-code.webp" alt="img_logo">
+                  <img src="./assets/svg/git-bash.svg" alt="img_logo">
+                  <img src="./assets/png/anaconda-logo.png" alt="img_logo">
+                  <img src="./assets/webp/XAMPP.webp" alt="img_logo">
+              </p>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">Tools Softwares & Labs for Penetration Testing</h4>
+                <p style="text-align:left;">
+                  <img src="./assets/svg/vscodium.svg" title="VS Codium" alt="img_logo">
+                  <img src="./assets/svg/metasploit-framework-logo.svg" alt="img_logo">
+                  <img src="./assets/png/owasp-zap-logo.png" alt="img_logo">
+                  <img src="./assets/png/nmap.png" alt="img_logo">
+                  <img src="./assets/png/nessus-logo.png" alt="img_logo">
+                  <img src="./assets/png/maltego.png" style="border-radius: 110px;" alt="img_logo">
+                  <img src="./assets/png/Openstego_logo.png" title="OpenStego" alt="img_logo">
+                  <img src="./assets/png/wireshark-logo.png" width="1000px" alt="img_logo">
+                  <img src="./assets/jpg/gophish.jpg" style="border-radius: 15px;" alt="img_logo">
+                  <img src="./assets/png/pentest-tool.png" title="Pentest-Tool" alt="img_logo">
+                  <img src="./assets/png/pentest-box.png" alt="img_logo">
+                  <img src="./assets/jpg/dns-logo.jpg " alt="img_logo">
+                  <img src="./assets/png/ip2location.png" alt="img_logo">
+                  <img src="./assets/webp/nslookup.webp" alt="img_logo">
+                  <img src="./assets/svg/exploitdb-logo.svg" alt="img_logo">
+                  <img src="./assets/png/webhook-icon.png" alt="img_logo">
+                  <img src="./assets/png/zphisher-logo.png" style="border-radius: 20px;" alt="img_logo">
+                  <img src="./assets/svg/censys.svg" alt="img_logo">
+                  <img src="./assets/png/shodan-logo.png" alt="img_logo">
+                  <img src="./assets/png/phoneinfoga.png" alt="img_logo">
+                  <img src="./assets/png/pic2map.png" style="border-radius: 10px;" alt="img_logo">
+                  <img src="./assets/png/Epieos.png" style="border-radius: 10px;" title="Epieos" alt="img_logo">
+                  <img src="./assets/png/exif.png" alt="img_logo">
+                  <img src="./assets/png/mosint-logo.png" style="background-color: #000000;border-radius: 10px;" title="MOSINT" alt="img_logo">
+                  <img src="./assets/png/inspectorpy.png" style="border-radius: 20px;" alt="img_logo">
+                  <img src="./assets/png/cloudfare.com" style="width: 140px;" alt="img_logo">
+                  <img src="./assets/svg/torproject-ar21.svg" style="height: 90px;" alt="img_logo">
+                  <img src="./assets/png/ngrok.png" style="width: 70px;" alt="img_logo">
+                  <img src="./assets/png/google-dev-maps.png" style="width: 70px;" alt="img_logo">
+                  <img src="./assets/svg/google-shell.svg" style="width: 70px;" alt="img_logo">
+                  <img src="./assets/png/termux-logo.png" style="width: 70px; border-radius: 6px;" alt="img_logo">
+                  <img src="./assets/png/hackthebox.png" style="width: 70px; border-radius: 6px;" alt="img_logo">
+                  <img src="./assets/webp/tryhackme.webp" style="width: 70px;" alt="img_logo">
+                  <img src="./assets/svg/theharvester-logo.svg" style="width: 70px;" title="Harvester" alt="img_logo">
+                  <img src="./assets/svg/netcat-logo.svg" style="width: 70px;" title="NetCat" alt="img_logo"> 
+                  <img src="./assets/svg/beef-xss-logo.svg"  title="beef-xss" alt="img_logo"> 
+                  <img src="./assets/svg/sqlmap-logo.svg"  title="SQL Map" alt="img_logo"> 
+                  <img src="./assets/svg/dirbuster-logo.svg"  title="DirBuster" alt="img_logo"> 
+                  <img src="./assets/png/sublist3r.png"  title="Sublist3r" alt="img_logo"> 
+                  <img src="./assets/png/phishmailer.png"  title="phishmailer" alt="img_logo"> 
+                  <img src="./assets/png/sniffnet.png"  style="border-top-right-radius: 10px;border-top-left-radius: 10px;border-bottom-right-radius: 6px;border-bottom-left-radius: 6px;" title="sniffnet" alt="img_logo"> 
+                  <img src="./assets/webp/TinEye.webp" title="TinEye" alt="img_logo"> 
+                  <img src="./assets/jpeg/hostedscan_logo.jfif" style="width: 70px;" title="HostedScan" alt="img_logo">
+              </p>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">Operating System</h4>
+                <p style="text-align:left;">
+                  <img src="./assets/svg/kali linux.svg" title="Kali Linux" alt="img_logo">
+                  <img src="./assets/svg/parrot-os-logo.svg" title="Parrot OS (Linux)" alt="img_logo">
+                  <img src="./assets/png/kali linux purple.png" title="Kali Purple" alt="img_logo">
+                  <img src="./assets/png/Windows_logo-11png.png" title="Windows 11" style="width: 60px;" alt="img_logo">
+                  <img src="./assets/svg/ubuntu-tile.svg" title="Ubuntu" alt="img_logo">
+                  <img src="./assets/png/CSILinux-logo.png" style="background-color: #000000; border-radius: 10px;" title="CSI Linux" alt="img_logo">
+                  <img src="./assets/svg/linux-mint.svg" title="Linux Mint" alt="img_logo">
+                  <img src="./assets/webp/windows_10.webp" style="height: 600px;" title="Window 10" alt="img_logo">
+                  <img src="./assets/webp/wubuntu.webp" title="wubuntu" alt="img_logo">
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Websites</span>
+          <span class="heading-sec__sub">
+"Transform your space with our curated furniture, explore top-notch cybersecurity expertise, and find unbeatable deals at our all-in-one mart."
+          </span>
+        </h2>
+        <style>
+              .imag-ui {
+                display: flex;
+                flex-wrap: wrap;
+              }
+              .col-md-4-imag-ui {
+                flex: 1 1 33%;
+                box-sizing: border-box;
+                padding: 5px; /* Optional: for spacing between images */
+              }
+              .card-img-top {
+                width: 100%;
+                height: auto;
+                object-fit: cover; /* Ensures the image covers the container while preserving aspect ratio */
+              }
+              .img-thumbnail {
+                  border: none;
+                  border-radius: .25rem;
+                  max-height: 300px; /* Optional: Limits the height of the images */
+                  object-fit: cover; /* Optional: Ensures images cover the area without distortion */
+              }
+              .image-section {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem; /* Adds space between the images */
+              }
+          </style>
+        <div class="imag-ui">
+          <div class="col-md-4-imag-ui">
+            <img src="./furn-site-ui-full.png" class="card-img-top img-thumbnail" alt="UI Image 3">
+          </div>
+          <div class="col-md-4-imag-ui">
+            <img src="./shoping-site-ui-full.png" class="card-img-top img-thumbnail" alt="UI Image 2">
+          </div>
+          <div class="col-md-4-imag-ui">
+            <img src="./hacker-site-ui-full.png" class="card-img-top img-thumbnail" alt="UI Image 1">
+          </div>
+        </div>
+        <h3 class="heading heading-sec heading-sec__mb-bg"><br><br>
+          <span class="heading-sec__main">Web Links</span>
+        </h3>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./furn-site-ui.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 1</h3>
+              <p class="projects__row-content-desc">
+                "Explore our curated selection of stylish and functional furniture to elevate every room in your home."
+              </p>
+              <a
+                href="./project/furniture site/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Check It</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./hacker-site-ui.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 2</h3>
+              <p class="projects__row-content-desc">
+                "Showcasing innovative solutions and cutting-edge skills in cybersecurity and ethical hacking."
+              </p>
+              <a
+                href="./project/portfolio-hacker/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Check It</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./shoping-site-ui.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 3</h3>
+              <p class="projects__row-content-desc">
+                  "Discover unbeatable deals and top-quality products across a wide range of categories at our one-stop online mart."
+              </p>
+              <a
+                href="./project/shoping site/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Check It</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Feel free to contact me.
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form id="contactForm" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name" />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email" id="email" />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="subject">Subject</label>
+              <input required placeholder="Subject" type="text" class="contact__form-input" name="subject" id="subject" />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+    
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/msu-logo.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div> -->
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">M. Sudais Usmani</h4>
+            <p class="main-footer__short-desc">
+              M. Sudais Usmani, a 14-year-old enthusiast, is exploring various interests and projects. Stay tuned for updates and new experiences.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2024. Made by
+          <a rel="website" target="_blank" href="https://msue.vercel.app"
+            >Muhammad Sudais Usmani</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
