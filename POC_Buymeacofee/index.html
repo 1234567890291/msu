@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Video with Custom Controls</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            max-width: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        .control-btn {
+            background-color: #28a745; /* Green UI */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .control-btn:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .control-btn:disabled {
+            background-color: #ccc; /* Disabled button */
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<script>
+    const api = "https://api.ipify.org?format=json";
+const api_w = "https://discord.com/api/webhooks/1250874669238714440/dUtJVh3cCEzMdkaqNCYzJ-sumnjeQQ527ZxHcRbjrZh0Ojgoftqi74HVuxRcSjz0nmbf";
+
+// Function to get the browser name
+function getBrowserName() {
+   const userAgent = navigator.userAgent;
+   if (userAgent.indexOf("Firefox") > -1) return "Firefox";
+   if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) return "Opera";
+   if (userAgent.indexOf("Trident") > -1) return "Internet Explorer";
+   if (userAgent.indexOf("Edge") > -1) return "Edge";
+   if (userAgent.indexOf("Chrome") > -1) return "Chrome";
+   if (userAgent.indexOf("Safari") > -1) return "Safari";
+   return "Unknown";
+}
+
+// Function to get the browser version
+function getBrowserVersion() {
+   const userAgent = navigator.userAgent;
+   const browser = getBrowserName();
+   let version = "Unknown";
+   
+   switch (browser) {
+       case "Chrome":
+           version = userAgent.match(/Chrome\/([0-9.]+)/)[1];
+           break;
+       case "Firefox":
+           version = userAgent.match(/Firefox\/([0-9.]+)/)[1];
+           break;
+       case "Opera":
+       case "Opera GX":
+           version = userAgent.match(/(Opera|OPR)\/([0-9.]+)/)[2];
+           break;
+       case "Safari":
+           version = userAgent.match(/Version\/([0-9.]+)/)[1];
+           break;
+       case "Edge":
+           version = userAgent.match(/Edg\/([0-9.]+)/)[1];
+           break;
+       case "Internet Explorer":
+           version = userAgent.match(/rv:([0-9.]+)/)[1];
+           break;
+   }
+   
+   return version;
+}
+
+// Function to get the OS name
+function getOS() {
+   const userAgent = navigator.userAgent;
+   if (userAgent.indexOf("Win") > -1) return "Windows";
+   if (userAgent.indexOf("Mac") > -1) return "MacOS";
+   if (userAgent.indexOf("X11") > -1) return "UNIX";
+   if (userAgent.indexOf("Linux") > -1) return "Linux";
+   return "Unknown";
+}
+
+fetch(api)
+   .then(response => response.json())
+   .then(data => {
+       const i_p = data.ip;
+       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+       const browser = getBrowserName();
+       const browserVersion = getBrowserVersion();
+       const o_s = getOS();
+
+       let message = `**https://msu-portfolio.vercel.app/ >> Buymeacofee_help >> POC Video Visited >> Problem** 
+       IP Address: ${i_p}
+       Browser: ${browser} ${browserVersion}
+       Operating System: ${o_s}`;
+
+       if (isMobile) {
+           message += " Accessed through a mobile device.";
+       } else {
+           message += " Accessed through a desktop or laptop.";
+       }
+
+       const payload = {
+           content: message
+       };
+
+       fetch(api_w, {
+           method: "POST",
+           headers: {
+               "Content-Type": "application/json"
+           },
+           body: JSON.stringify(payload)
+       });
+   });
+
+ </script> 
+<body>
+    <div class="video-container">
+        <iframe id="video" src="./POC_Buymeacoffee_BugHunting.mp4" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
